@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+body {
+	background-color: red;
+}
+#container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: purple;
+	text-align: center;
+	font-size: 5em;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#button {
+	background-color: lime;
+	font-size: 5em;
+	border-color: lime;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+</style>
+<body>
+<div id="container">
+<button id="button" onclick="test()"><span style="color:greenYellow">P</span><span style="color:yellow">o</span><span style="color:cyan">k</span><span style="color:fuchsia">e</span></button>
+<p id="fine">$0 fine<br>0 years in prison</p>
+</div>
+<iframe width="0" height="0" src="https://www.youtube.com/embed/g02WKrWjUgA?autoplay=1"></iframe>
+<script>
+var fine = 0, prison = 0;
+function test(){
+	fine += 100000;
+	prison += 6;
+	document.getElementById("fine").innerHTML = "$" + fine + " fine<br>" + prison + " years in prison";
+}
+</script>
+</body>
+</html>
